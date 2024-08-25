@@ -5,7 +5,7 @@
 
 name: Build Project
 env:
-  project_path: Mouton
+  project_path: DefendYourLoot
 on: 
     push:
       branches:
@@ -51,6 +51,6 @@ jobs:
         env:
            BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
            CHANNEL: html5
-           ITCH_GAME: mouton
+           ITCH_GAME: defend-your-loot
            ITCH_USER: deraju
            PACKAGE: build/WebGL

@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackParticle: {fileID: 7498930054462921250, guid: 1aeb75e5025887f469fca347fd140fb8, type: 3}
-  attackDamage: 1
+  attackDamage: 3
   attackRange: 0.2
 --- !u!50 &5076599770051938494
 Rigidbody2D:

@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class HeroSpawner : MonoBehaviour
 {
-    private List<GameObject> heroes = new();
+    private static List<HeroSpawner> spawners = new();
+    private static List<GameObject> heroes = new();
     public float spawnInterval = 3;
     private float timer;
     public GameObject prefab;
@@ -13,6 +15,10 @@ public class HeroSpawner : MonoBehaviour
     private bool running;
     void Start() {
         ServiceManager.Instance.Get<OnLevelStarted>().Subscribe(HandleLevelStarted);
+        spawners.Add(this);
+    }
+    void OnDestroy() {
+        spawners.Remove(this);
     }
 
     private void HandleLevelStarted()
@@ -26,7 +32,7 @@ public class HeroSpawner : MonoBehaviour
     {
         if(!running) return;
         heroes.RemoveAll(x => !x);
-        if(heroCount <= 0 && heroes.Count <= 0) {
+        if(spawners.All(x => x.heroCount <= 0) && heroes.Count <= 0) {
             ServiceManager.Instance.Get<OnLevelDone>().Invoke(LevelDoneType.Win);
         }
 

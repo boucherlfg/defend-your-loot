@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerAttackScript : MonoBehaviour
 {
+    public float cost = 3;
     public float charge = 10;
     private float currentCharge;
     private GameObject instance;
@@ -39,11 +40,11 @@ public class PlayerAttackScript : MonoBehaviour
         currentCharge = Mathf.Min(charge, currentCharge);
         
         ServiceManager.Instance.Get<OnManaChanged>().Invoke(currentCharge / charge);
-        if(currentCharge < 3) return;
+        if(currentCharge < cost) return;
         
         if(!Input.GetMouseButtonDown(0)) return;
         
-        currentCharge -= 3;
+        currentCharge -= cost;
 
         var mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 delta = mouse - transform.position;

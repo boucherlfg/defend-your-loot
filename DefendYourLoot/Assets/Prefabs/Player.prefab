@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: -2620118056087333951}
   - component: {fileID: -2265005173118854425}
   - component: {fileID: 3276183380441067519}
+  - component: {fileID: 4029527048628186889}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -297,5 +298,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53996b213d8818241a500183e9c2b8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 3
+  projectileSpeed: 8
   charge: 10
   projectile: {fileID: 4644002463125241418, guid: 89c57fe11e2cff9428a604780dfe3efc, type: 3}
+--- !u!114 &4029527048628186889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8834373460166779248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560112f876f5746c780eca0d404e7139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1073741824
+  radiusBackingField: 0.5
+  heightBackingField: 2
+  centerBackingField: 1
+  locked: 0
+  lockWhenNotMoving: 0
+  agentTimeHorizon: 2
+  obstacleTimeHorizon: 0.5
+  maxNeighbours: 10
+  layer: 1
+  collidesWith: -1
+  wallAvoidForce: 1
+  wallAvoidFalloff: 1
+  priority: 0.5
+  debug: 0

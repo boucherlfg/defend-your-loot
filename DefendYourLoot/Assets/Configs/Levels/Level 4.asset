@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5440dedd3d24d1a92df4482bc74cace, type: 3}
+  m_Name: Level 4
+  m_EditorClassIdentifier: 
+  spawnInterval: 3
+  heroes:
+  - {fileID: 6207828592077126849, guid: c5984ed4339361344b8058af8f9aea16, type: 3}
+  - {fileID: 7574119052108895821, guid: ff5ab810aa50d73498297adc9b9b312f, type: 3}
+  - {fileID: 6207828592077126849, guid: 61dfcd8e99fc9ce41b140d183bc43949, type: 3}
+  - {fileID: 6207828592077126849, guid: c5984ed4339361344b8058af8f9aea16, type: 3}
+  - {fileID: 7574119052108895821, guid: ff5ab810aa50d73498297adc9b9b312f, type: 3}
+  - {fileID: 6207828592077126849, guid: 61dfcd8e99fc9ce41b140d183bc43949, type: 3}
+  - {fileID: 6207828592077126849, guid: 75635c6fa4b9c3c41bf42e1559d1afd9, type: 3}
+  - {fileID: 7574119052108895821, guid: a1807b0c496aa37419490ab194dfa683, type: 3}

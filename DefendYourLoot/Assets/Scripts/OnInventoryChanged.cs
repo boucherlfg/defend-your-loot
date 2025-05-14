@@ -1,1 +1,0 @@
-public class OnInventoryChanged : BaseEvent<PlaceItemScript> {}

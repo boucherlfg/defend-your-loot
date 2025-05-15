@@ -4099,8 +4099,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6cedfe8380a27a948bf586d8b560a6de, type: 2}
   - {fileID: 11400000, guid: 697d50bf4f338b843a514b5b5e3b7a33, type: 2}
   - {fileID: 11400000, guid: 7cf8820dc4cd99c4e9c2cf80224e2ca2, type: 2}
-  - {fileID: 11400000, guid: 10547cc27cc7ebb44aa77fc349047396, type: 2}
-  - {fileID: 11400000, guid: fb6a28bad8640cb41a8f1b81feb4aa44, type: 2}
   buyButtonsParent: {fileID: 225620571}
 --- !u!1 &1742441744
 GameObject:
